@@ -7,7 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundBrush}">
-
-    </Grid>
+    <StackPanel Orientation="Horizontal" Background="{StaticResource ApplicationPageBackgroundBrush}">
+        <ItemsControl ItemsSource="{Binding Columns}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Aqua" BorderThickness="1" CornerRadius="15">
+                        <TextBlock Text="{Binding Path=Name}" />
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
 </Page>

@@ -33,6 +33,7 @@ namespace Vida_Karto
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            this.DataContext = this;
         }
     }
 }
