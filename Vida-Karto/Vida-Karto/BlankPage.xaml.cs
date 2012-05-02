@@ -26,6 +26,8 @@ namespace Vida_Karto
             this.InitializeComponent();
         }
 
+        public List<Column> Columns { get; set; }
+
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>
@@ -33,7 +35,53 @@ namespace Vida_Karto
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            this.SetUpTestData();
             this.DataContext = this;
+        }
+
+        private void SetUpTestData()
+        {
+            this.Columns = new List<Column>()
+            {
+                new Column()
+                {
+                    Name = "Column 1",
+                    Cards = new List<Card>()
+                    {
+                        new Card() { Name = "First card" },
+                        new Card() { Name = "Second card" },
+                        new Card() { Name = "Third card" }
+                    }
+                },
+                new Column()
+                {
+                    Name = "Second column",
+                    Cards = new List<Card>()
+                    {
+                        new Card() { Name = "4 card" },
+                        new Card() { Name = "5 card" },
+                    }
+                },
+                new Column()
+                {
+                    Name = "The third column",
+                    Cards = new List<Card>()
+                    {
+                        new Card() { Name = "6 card" },
+                        new Card() { Name = "7 card" },
+                        new Card() { Name = "8card" }
+                    }
+                },
+                new Column()
+                {
+                    Name = "The fourth column",
+                    Cards = new List<Card>()
+                    {
+                        new Card() { Name = "9 card" },
+                        new Card() { Name = "10 card" }
+                    }
+                }
+            };
         }
     }
 }
