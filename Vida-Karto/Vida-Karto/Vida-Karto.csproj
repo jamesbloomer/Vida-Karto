@@ -120,8 +120,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BlankPage.xaml.cs">
-      <DependentUpon>BlankPage.xaml</DependentUpon>
+    <Compile Include="BoardPage.xaml.cs">
+      <DependentUpon>BoardPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataModel\DesignTimeColumns.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -156,7 +156,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="BlankPage.xaml">
+    <Page Include="BoardPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -22,7 +22,7 @@
             {
                 new Column()
                 {
-                    Name = "Column 1",
+                    Name = "First column",
                     Cards = new ObservableCollection<Card>()
                     {
                         new Card() { Name = "First card" },
@@ -41,21 +41,40 @@
                 },
                 new Column()
                 {
-                    Name = "The third column",
+                    Name = "Third column",
                     Cards = new ObservableCollection<Card>()
                     {
                         new Card() { Name = "6 card" },
                         new Card() { Name = "7 card" },
-                        new Card() { Name = "8card" }
+                        new Card() { Name = "8 card" }
                     }
                 },
                 new Column()
                 {
-                    Name = "The fourth column",
+                    Name = "Fourth column",
                     Cards = new ObservableCollection<Card>()
                     {
                         new Card() { Name = "9 card" },
                         new Card() { Name = "10 card" }
+                    }
+                },
+                new Column()
+                {
+                    Name = "Fifth column",
+                    Cards = new ObservableCollection<Card>()
+                    {
+                        new Card() { Name = "11 card" },
+                        new Card() { Name = "12 card" }
+                    }
+                },
+                new Column()
+                {
+                    Name = "Sixth column",
+                    Cards = new ObservableCollection<Card>()
+                    {
+                        new Card() { Name = "13 card" },
+                        new Card() { Name = "14 card" },
+                        new Card() { Name = "15 card" }
                     }
                 }
             };
