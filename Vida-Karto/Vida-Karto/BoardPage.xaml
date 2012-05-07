@@ -10,6 +10,22 @@
     d:DataContext="{d:DesignInstance Type=data:DesignTimeColumns, IsDesignTimeCreatable=True}" 
     >
 
+    <Page.BottomAppBar>
+        <AppBar Padding="10,0,10,0">
+            <StackPanel Orientation="Horizontal" Background="Black">
+                <Button 
+                    Click="AddNewColumn" 
+                    HorizontalAlignment="Left" 
+                    IsEnabled="True"
+                    Style="{StaticResource AddAppBarButtonStyle}"/>
+                <Button 
+                    Click="RemoveColumn" 
+                    HorizontalAlignment="Left" 
+                    Style="{StaticResource RemoveAppBarButtonStyle}"/>
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
+    
     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Background="White">
         <ItemsControl ItemsSource="{Binding Columns}" >
         <ItemsControl.ItemsPanel>

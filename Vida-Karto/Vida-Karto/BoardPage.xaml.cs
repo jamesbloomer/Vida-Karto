@@ -36,5 +36,13 @@ namespace Vida_Karto
         {
             this.DataContext = new DataModel.DesignTimeColumns();
         }
+
+        private void AddNewColumn(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void RemoveColumn(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
